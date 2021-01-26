@@ -18,4 +18,44 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 html{
 	background: linear-gradient(135deg, #3315A1, #CC7DC5, #CE125B, #F59C38, #EE865E);
+	font-family: 'Noto Serif JP', serif;
+}
+body{
+	display: grid;
+	height: 100%;
+	place-items: center;
+}
+.wrapper{
+	max-width: 400px;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 6px;
+}
+.wrapper .title-text{
+	display: flex;
+	width: 200%;
+}
+.wrapper .title-text .title{
+	width: 50%;
+	font-size: 40px;
+	text-align: center;
+}
+.wrapper .form-container{
+	width: 100%;
+}
+.form-inner form .field{
+height: 50px;
+width: 100%;
+margin-top: 20px;
+}
+.form-inner form .field input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding-left: 15px;
+	font-size: 17px;
+	border-bottom: 2px solid gray;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	border-bottom-width: 2px;
 }
