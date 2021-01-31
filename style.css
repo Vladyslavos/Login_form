@@ -45,6 +45,51 @@ body{
 	width: 100%;
 	overflow: hidden;
 }
+.form-container .slide-controls{
+	display: flex;
+	height: 50px;
+	width: 100%;
+	margin: 30px 0 10px 0; 
+	justify-content: space-between;
+	border: 1px solid gray;
+	border-radius: 6px;
+	overflow: hidden;
+	border:1px solid gray;
+	position: relative;
+}
+.slide-controls .slide{
+	height: 100%;
+	width: 100%;
+	font-size: 19px;
+	z-index: 1;
+	color: #ffff;
+	text-align: center;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.slide-controls .slide-tab{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	transition: all 0.4s ease;
+	background:linear-gradient(280deg, #3315A2, #CC7DC9, #CE128B, #F59C39, #EE875E);;
+}
+#signup:checked ~ .slide-tab{
+	left: 50%;
+}
+#signup:checked ~ .login{
+	color: #000;
+}
+input[type="radio"]{
+	display: none;
+}
+.slide-controls .signup{
+	color: #000; 
+}
+
 .form-container .form-inner{
 	display: flex;
 	width: 200%;
